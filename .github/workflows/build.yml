@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
   steps:
-    -name: Checkout
+    - name: Checkout
     uses: actions/checkout@v2
-    
-    -name: Build on Arduino CLI
+
+    - name: Build on Arduino CLI
     run: bash ci/build-arduino.sh
