@@ -1,9 +1,11 @@
-#include "mqttlog.h"
+#include "mqtt_log.h"
 mqtt_log MQ;
-void setup() {
+void setup()
+{
   Serial.begin(115200);
   WiFi.begin("Z U S A N 4G", "12345678");
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED)
+  {
     delay(500);
     Serial.println("Connecting to WiFi..");
   }
@@ -11,7 +13,8 @@ void setup() {
 
   MQ.Mqtt_Begin();
 }
-void loop() {
+void loop()
+{
   MQ.Mqtt_log("Working");
   delay(5000);
 }
