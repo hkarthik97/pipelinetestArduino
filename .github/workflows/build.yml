@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - name: Build on Arduino CLI
-      run: bash ci/build-arduino.sh
+    run: bash ci/build-arduino.sh
